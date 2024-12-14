@@ -46,10 +46,7 @@ def compress_diskmap(expanded_diskmap:list) -> int:
                 break
 
         i -= file_length 
-    # with open('datawrong.txt', 'w') as f:
-    #     for char in expanded_diskmap:
-    #         f.write(char)
-    #         f.write('\n')
+
     checksum = 0
     for j,char in enumerate(expanded_diskmap):
         if char == '.':
