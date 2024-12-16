@@ -6,7 +6,7 @@ with open("input.txt", "r") as f:
         else:
             stones[stone] = 1
 
-def perform_blink(stones:dict):
+def perform_blink(stones:dict) -> [dict,int]:
     new_stones = {}
 
     for stone in stones:
